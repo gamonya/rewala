@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Select from 'react-select';
 import { WrappedFieldProps } from 'redux-form';
+import { Country } from '../../../generated/graphql';
 
 interface IProps extends WrappedFieldProps {
   label: string;
   type: string;
-  data: any;
+  data: [ Country ];
 }
 
 const CustomSelectCode: React.FC<IProps> = ({
@@ -14,6 +15,9 @@ const CustomSelectCode: React.FC<IProps> = ({
                                               type,
                                               data,
                                             }) => {
+  useEffect(() => {
+    console.log(data);
+  }, [ data ]);
   const option = () => {
     const res = [];
     for (const item in data) {
