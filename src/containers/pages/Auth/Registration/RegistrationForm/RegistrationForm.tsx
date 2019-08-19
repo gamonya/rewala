@@ -8,6 +8,8 @@ import { CustomInput } from '../../../../../shared/components/FormElements/Custo
 import CustomSelectCode from '../../../../../shared/components/FormElements/CustomSelectCode/CustomSelectCode';
 import { validator } from '../../../../../shared/components/FormElements/validate';
 
+import { registrationFormValues } from '../../../../../shared/types/registration';
+
 const useStyles = makeStyles({
   registrForm: {
     display: 'flex',
@@ -38,9 +40,7 @@ interface IProps {
   countries: any;
 }
 
-interface FormData {
-  fullname: string;
-  code: string;
+interface FormData extends registrationFormValues {
 }
 
 const RegistrationForm: React.FC<InjectedFormProps<FormData, IProps, string> & IProps> = React.memo(({ handleSubmit, countries }) => {

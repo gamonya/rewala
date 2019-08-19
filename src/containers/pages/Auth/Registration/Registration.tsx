@@ -8,6 +8,7 @@ import FetchError from '../../../../shared/components/FetchError/FetchError';
 import WrappForm from '../../../../shared/components/WrappForm/WrappForm';
 import { UserInput } from '../../../../shared/generated/graphql';
 import RegistrationForm from './RegistrationForm/RegistrationForm';
+import { registrationFormValues } from '../../../../shared/types/registration';
 
 import { Actions as AuthAction } from '../../../../store/auth/actions';
 
@@ -65,7 +66,7 @@ const Registration: React.FC<Props> = ({
     fetchConfig();
   }, [ fetchConfig ]);
 
-  const handleOnRegister = (values: any) => {
+  const handleOnRegister = (values: registrationFormValues) => {
     const payload = {
       email: values.email,
       password: values.confirmPassword,
