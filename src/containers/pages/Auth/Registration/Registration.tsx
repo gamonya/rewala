@@ -7,7 +7,7 @@ import Centred from '../../../../shared/components/Centred/Centred';
 import FetchError from '../../../../shared/components/FetchError/FetchError';
 import WrappForm from '../../../../shared/components/WrappForm/WrappForm';
 import { UserInput } from '../../../../shared/generated/graphql';
-import { registrationFormValues } from '../../../../shared/types/registration';
+import { registrationFormValues } from '../../../../shared/interface/registration';
 import RegistrationForm from './RegistrationForm/RegistrationForm';
 
 import { Actions as AuthAction } from '../../../../store/auth/actions';

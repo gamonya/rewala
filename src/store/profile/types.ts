@@ -1,4 +1,4 @@
-import { Me } from '../../shared/types/profile';
+import { Me } from '../../shared/interface/profile';
 
 export interface ProfileState {
   data: Me | null;

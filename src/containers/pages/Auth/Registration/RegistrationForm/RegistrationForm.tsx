@@ -9,7 +9,7 @@ import CustomSelectCode from '../../../../../shared/components/FormElements/Cust
 import { validator } from '../../../../../shared/components/FormElements/validate';
 
 import { Country } from '../../../../../shared/generated/graphql';
-import { registrationFormValues } from '../../../../../shared/types/registration';
+import { registrationFormValues } from '../../../../../shared/interface/registration';
 
 const useStyles = makeStyles({
   registrForm: {

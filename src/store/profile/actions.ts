@@ -1,5 +1,5 @@
 import { action, ActionType } from 'typesafe-actions';
-import { Me } from '../../shared/types/profile';
+import { Me } from '../../shared/interface/profile';
 
 export enum ActionTypes {
   GET_ME = 'GET_ME',
