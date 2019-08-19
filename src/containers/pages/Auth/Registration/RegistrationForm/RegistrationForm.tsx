@@ -8,6 +8,7 @@ import { CustomInput } from '../../../../../shared/components/FormElements/Custo
 import CustomSelectCode from '../../../../../shared/components/FormElements/CustomSelectCode/CustomSelectCode';
 import { validator } from '../../../../../shared/components/FormElements/validate';
 
+import { Country } from '../../../../../shared/generated/graphql';
 import { registrationFormValues } from '../../../../../shared/types/registration';
 
 const useStyles = makeStyles({
@@ -37,7 +38,7 @@ const useStyles = makeStyles({
 });
 
 interface IProps {
-  countries: any;
+  countries: Country;
 }
 
 interface FormData extends registrationFormValues {
